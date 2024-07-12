@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa; 
+            font-family: 'Arial', sans-serif; 
+            padding-top: 50px;
+        }
+
+        .container {
+            max-width: 600px; 
+            background-color: #ffffff; 
+            padding: 30px; 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+            margin: auto; 
+        }
+
+        h1, h5 {
+            text-align: center; 
+            color: #007bff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto; 
+        }
+
+        label {
+            font-weight: bold; 
+            color: #007bff;
+        }
+
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ced4da; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; 
+            color: white; 
+            padding: 10px 20px;
+            border: none; 
+            border-radius: 4px;
+            cursor: pointer; 
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            display: block; 
+            text-align: center; 
+            margin-top: 20px; 
+            text-decoration: none;
+            color: #007bff;
+            font-size: 1rem;
+        }
+
+        a:hover {
+            color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">PAGE D'INSCRIPTION</h1>
+        <h5 class="mb-4 text-muted">NB : SEULS LES APPRENANTS DE L'ISEP-AT ONT LA POSSIBILITÉ DE S'INSCRIRE.</h5>
+
+        <form>
+            <div class="mb-3">
+                <label for="nom" class="form-label">Nom :</label>
+                <input type="text" id="nom" name="nom" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="prenom" class="form-label">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="filiere" class="form-label">Filière :</label>
+                <select id="filiere" name="filiere" class="form-select" required>
+                    <option value="informatique">Informatique</option>
+                    <option value="mecanique">Mécanique</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="metier" class="form-label">Métier :</label>
+                <select id="metier" name="metier" class="form-select" required>
+                    <option value="abd">ABD</option>
+                    <option value="apd">APD</option>
+                    <option value="dfe">DFE</option>
+                    <option value="dbe">DBE</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email professionnel :</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="telephone" class="form-label">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="date_naissance" class="form-label">Date de Naissance :</label>
+                <input type="date" id="date_naissance" name="date_naissance" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="adresse" class="form-label">Adresse :</label>
+                <textarea id="adresse" name="adresse" class="form-control" rows="3" required></textarea>
+            </div>
+
+            <div class="text-center mt-4">
+                <input type="submit" value="Soumettre" class="btn btn-primary">
+            </div>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="C:\Users\LAMINE\Desktop\AMICAL\principal\page.html">Page d'accueil</a>
+        </div>
+    </div>
+</body>
+</html>
